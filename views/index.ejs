@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style/style.css">
+    <title>Chicago Art Institute</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <%- include('partials/nav.ejs') %>
+        </header>
+        <main>
+            <div class="art">
+                <div class="art__header">
+                    <div class="art__headerTitle">
+                        <h3>Chicago Art Institute</h3>
+                    </div>
+                </div>
+                <div class="art__flex">
+                    <% artData.forEach((art)=>{ %>
+                        <div class="art__card">
+                            <img class="card-img-top"
+                                src="https://www.artic.edu/iiif/2/<%= art.image_id %>/full/843,/0/default.jpg"
+                                alt="<%= art.alt_text %>">
+                            <div class="card-body art__cardBody">
+                                <h3 class="art__cardTitle">
+                                    <%- art.title %>
+                                </h3>
+                                <span class="art__medium">
+                                    <%- art.medium_display %>
+                                </span>
+                                <span class="art__artist">
+                                    <%- art.artist_display %>
+                                </span>
+                            </div>
+                        </div>
+                        <% }) %>
+
+                </div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="./javascript/index.js"></script>
+</body>
+
+</html>

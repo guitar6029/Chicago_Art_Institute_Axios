@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@300;400;600&display=swap');
+
+::root {
+    --main-background-color: rgb(186, 207, 226);
+    --nav-background-color: rgb(135, 73, 135);
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.collapse > .navbar-nav > .nav-item {
+    border-radius: 20px !important;
+}
+
+.nav-item:hover > a {
+    transition: background-color 0.5s ease !important;
+    background: rgb(23, 23, 23) !important;
+    color: #fff;
+    /* color: var(--main-background-color) !important; */
+}
+
+
+.art, .about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.art__card {
+    max-width: 500px;
+    min-height: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 1em;
+    box-shadow: 2px 10px 5px 0px rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: 2px 10px 5px 0px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 2px 10px 5px 0px rgba(0, 0, 0, 0.26);
+}
+
+.art__card > .card-img-top {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+
+}
+
+.art__flex, .about__flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1em;
+    gap: 1em;
+    justify-content: center;
+}
+
+
+.about__flex > p > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.about__flex > p > a:hover{
+    text-decoration: none !important;
+    transition: background-color 0.5s ease !important;
+    background: rgb(23, 23, 23) !important;
+    color: #fff;
+}
+
+.about__flex > p{
+    text-align: justify;
+}
+
+
+.art__header, .about__header {
+    border-bottom: 1px solid rgb(194, 187, 187);
+}
+
+.art__header,
+.about__header {
+    text-align: center;
+    margin: 2em;
+    width: 100%;
+
+}
+
+.art__headerTitle>h3,
+.about__headerTitle>h3 {
+    font-weight: 600;
+    font-size: 5em;
+}
+
+.art__cardTitle{
+    margin-top: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border-bottom: 1px solid rgb(145, 142, 142);
+}
+
+.art__artist {
+    font-size: 1.5em;
+}
+
+.art__cardBody{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.art__medium{
+    font-weight: 500;
+    
+}
+
+
+body {
+    font-family: 'Halant', serif;
+    background-color: var(--main-background-color);
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0px;
+}
+
+.navbar {
+    margin-bottom: 2em;
+    background-color: rgb(248, 249, 249) !important;
+}
+
+.navbar-brand{
+    margin-left: 10px;
+}
