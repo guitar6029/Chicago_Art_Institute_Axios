@@ -24,7 +24,7 @@ This project includes:
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/yourusername/art-institute.git
+    git clone https://github.com/guitar6029/Chicago_Art_Institute_Axios.git
     cd art-institute
     ```
 
